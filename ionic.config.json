@@ -1,0 +1,7 @@
+{
+  "name": "trampoline-set-icon",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
