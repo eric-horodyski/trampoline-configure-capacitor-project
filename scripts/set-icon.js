@@ -1,12 +1,18 @@
-#!/usr/bin/env node
+import { IosAssetGenerator, MobileProject, InputAsset, AndroidAssetGenerator } from "@capacitor/trampoline";
 
-import { MobileProject } from '@capacitor/trampoline';
+const config = {
+  ios: { path: "ios/App" },
+  android: { path: "android" }
+};
+const project = new MobileProject("../", config);
+const asset = new InputAsset("assets/logo.png", "logo", "any");
 
-const config = { ios: { path: 'ios/App' }, android: { path: 'android' } };
-const project = new MobileProject('../', config);
+const generateIcons = async (asset, project) => {
+  const generators = [new IosAssetGenerator(), new AndroidAssetGenerator()];
+  for (const generator of generators)
+    await generator.generate(asset, project);
+};
 
-await project.load();
+await generateIcons(asset, project);
 
-project
-
-console.log(project);
+console.log('Icons generated.');
