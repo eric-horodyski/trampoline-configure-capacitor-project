@@ -10,7 +10,7 @@
     "test.e2e": "cypress run",
     "test.unit": "vitest",
     "lint": "eslint",
-    "set-icon": "node scripts/set-icon"
+    "set-icon": "tsx scripts/generate-icons.ts"
   },
   "dependencies": {
     "@capacitor/android": "6.1.2",
@@ -20,6 +20,7 @@
     "@capacitor/ios": "6.1.2",
     "@capacitor/keyboard": "6.0.2",
     "@capacitor/status-bar": "6.0.1",
+    "@capacitor/trampoline": "file:../../ionic-team/trampoline",
     "@ionic/react": "^8.0.0",
     "@ionic/react-router": "^8.0.0",
     "@types/react-router": "^5.1.20",
@@ -32,7 +33,6 @@
   },
   "devDependencies": {
     "@capacitor/cli": "6.1.2",
-    "@capacitor/trampoline": "~0.1.0",
     "@testing-library/dom": ">=7.21.4",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
@@ -46,6 +46,7 @@
     "eslint-plugin-react": "^7.32.2",
     "jsdom": "^22.1.0",
     "terser": "^5.4.0",
+    "tsx": "~4.19.1",
     "typescript": "^5.1.6",
     "vite": "~5.2.0",
     "vitest": "^0.34.6"
