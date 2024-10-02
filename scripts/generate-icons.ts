@@ -27,7 +27,7 @@ const opts = {
 
 async function generateIcons() {
   const assets = [
-    new InputAsset(pathToLogo, AssetKind.Logo, Platform.Any),
+    //new InputAsset(pathToLogo, AssetKind.Logo, Platform.Any),
     new InputAsset(pathToLogoDark, AssetKind.LogoDark, Platform.Any),
   ];
   const generators = [new IosAssetGenerator(opts), new AndroidAssetGenerator(opts)];
