@@ -11,7 +11,8 @@
     "test.unit": "vitest",
     "lint": "eslint",
     "set-icon": "tsx scripts/generate-icon.ts",
-    "set-appname": "tsx scripts/set-appname.ts"
+    "set-appname": "tsx scripts/set-appname.ts",
+    "set-bundleid": "tsx scripts/set-bundleid.ts"
   },
   "dependencies": {
     "@capacitor/android": "6.1.2",
