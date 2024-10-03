@@ -10,7 +10,8 @@
     "test.e2e": "cypress run",
     "test.unit": "vitest",
     "lint": "eslint",
-    "set-icon": "tsx scripts/generate-icon.ts"
+    "set-icon": "tsx scripts/generate-icon.ts",
+    "set-appname": "tsx scripts/set-appname.ts"
   },
   "dependencies": {
     "@capacitor/android": "6.1.2",
